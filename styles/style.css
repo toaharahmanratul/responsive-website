@@ -1,0 +1,120 @@
+/* common styles */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+}
+/* fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap');
+
+/* -----------------------------------
+    First Section; Purple Backgroud 
+ ------------------------------------*/
+.first-section{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: #2D25A0;
+    width: 100%;
+    height: 677px;
+    margin-top: 0;
+    color: white;
+}
+.first-section h1{
+    font-size: 64px;
+    width: 485px;
+    height: 230px;
+}
+a{
+    display: inline-block;
+    background-color: #E02C6D;
+    text-decoration: none;
+    font-weight: 500;
+    color: white;
+    padding: 10px 24px 10px 24px;
+    font-size: 16px;
+}
+.fas.fa-arrow-right{
+    font-size: 16px;
+}
+.first-section img{
+    width: 556px;
+}
+
+/* -------------------
+    Players section 
+ --------------------*/
+ .players-section{
+     padding: 70px 10%;
+ }
+ .players{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     grid-row-gap: 27px;
+     grid-column-gap: 30px;
+ }
+ .player{
+     padding: 15px;
+     box-shadow: 5px 5px 20px lightgray;
+ }
+ .player-pic img{
+     max-width: 100%;
+ }
+ .player .player-detail{
+    width: 100%;
+ }
+ .player .player-name{
+     font-size: 28px;
+ }
+ .player .player-info{
+     font-size: 16px;
+     font-weight: 400;
+     color: #6C6C6C;
+ }
+
+ /* ---------------------
+    Optional Section 
+-----------------------*/
+.optional-section{
+    padding: 100px 15%;
+}
+.highlights{
+    display: flex;
+    align-items: center;
+    column-gap: 70px;
+}
+.highlights-left{
+    width: ;
+}
+.highlights-left .highlights-title{
+    font-size: 48px;
+    font-weight: bold;
+}
+.highlights-left .highlights-text{
+    color: #6C6C6C;;
+}
+
+.highlights-right img{
+    width: 100%;
+}
+
+/* ------------------
+    Footer Section 
+------------------- */
+.logo-copyright{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 20px;
+    margin: 5%;
+}
+.logo-copyright img{
+    width: 485px;
+}
+.far.fa-copyright{
+    font-size: 14px;
+}
+.icons{
+    font-size: 32px;
+    color: #969BAB;
+}
