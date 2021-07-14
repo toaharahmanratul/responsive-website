@@ -40,6 +40,19 @@ a{
 .first-section img{
     width: 556px;
 }
+/* For Transition */
+#live-jolbe{
+    border: 3px solid #2D25A0; /* invisible border */
+}
+.first-section:hover #live-jolbe{
+    border: 3px solid rgb(44, 163, 236);
+    border-radius: 5px;
+    transition: border 0.5s ease-in-out;
+}
+#boro-hobe:hover{
+    transform: scale(1.2);
+    transition: transform 0.8s;
+}
 
 /* -------------------
     Players section 
@@ -56,6 +69,7 @@ a{
  .player{
      padding: 15px;
      box-shadow: 5px 5px 20px lightgray;
+     cursor: grab;
  }
  .player-pic img{
      max-width: 100%;
