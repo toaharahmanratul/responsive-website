@@ -97,9 +97,6 @@ a{
     align-items: center;
     column-gap: 70px;
 }
-.highlights-left{
-    width: ;
-}
 .highlights-left .highlights-title{
     font-size: 48px;
     font-weight: bold;
@@ -111,6 +108,62 @@ a{
 .highlights-right img{
     width: 100%;
 }
+
+/* ------------------
+    Bonus Section 
+------------------- */
+.poll-box{
+    box-shadow: 10px 10px 40px gray;
+    margin: 70px 10% 70px 10%;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-bottom: 20px;
+    border-radius: 20px;
+}
+.poll-box h2{
+    text-align: center;
+    font-size: 56px;
+}
+.main-div{
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    padding: 0;
+    display: flex;
+}
+.main-div img{
+    border-radius: 10px;
+}
+.messi{
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+    width: 40%;
+    cursor: grab;
+}
+.messi img{
+    display: block;
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+.ronaldo{
+    border-radius: 10px;
+    box-shadow: 10px 10px 40px gray;
+    width: 40%;
+    cursor: grab;
+}
+.ronaldo img{
+    display: block;
+    width: 450px;
+    height: 600px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
 
 /* ------------------
     Footer Section 
@@ -131,4 +184,103 @@ a{
 .icons{
     font-size: 32px;
     color: #969BAB;
+}
+
+/* ------------------
+    Media Queries
+------------------ */
+/* 1. Mobile Devices */
+@media only screen and (max-width: 688px){
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #2D25A0;
+        width: 100%;
+        height: 770px;
+    }
+    .title-box{
+        padding: 10% 10%;
+        margin: 0;
+    }
+   .title-box h1{
+       font-size: 42px;
+       width: 100%;
+       margin-bottom: 20px;
+       height: 120px;
+   }
+   .banner img{
+       max-width: 100%;
+   }
+   .players{
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    }
+    
+    .highlights{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 70px;
+    }
+    .logo-copyright{
+        margin-bottom: 80px;
+    }
+    .logo-copyright img{
+        max-width: 80%;
+    }
+    .logo-copyright span{
+        font-size: 1em;
+    }
+    .poll-section{
+        display: none;
+    }
+}
+/* 2. Tablets */
+@media only screen and (min-width: 688px) and (max-width: 992px){
+    .first-section{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-evenly;
+        background-color: #2D25A0;
+        height: 750px;
+    }
+    .title{
+        padding: 10% 10% 0% 10%;
+    }
+    .title-box{
+        margin: 0;
+        padding: 0;
+    }
+    .title-box a{
+        margin: 0;
+    }
+   .title-box h1{
+       font-size: 50px;
+       width: 100%;
+       margin-top: 8%;
+       margin-bottom: 0;
+       height: 150px;
+   }
+   .banner img{
+       max-width: 80%;
+       margin-left: 90px;
+   }
+   .players{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 27px;
+    grid-column-gap: 30px;
+    }
+   /* Transition */
+   #boro-hobe:hover{
+    transform: scale(1.08);
+    transition: transform 0.8s;
+    }
+    .poll-section{
+        display: none;
+    }
 }
